@@ -1,0 +1,226 @@
+/* GLOBAL */
+* {
+    margin: 0;
+}
+img {
+    padding-top: 60px;
+}
+#forside {
+    background-color: #df0023;
+}
+#forside div {
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+#forside div h1 {
+    color: #fff;
+    font-family: "roboto";
+}
+
+#forside div input {
+    background-color: #c3001f;
+    border: 0px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+#forside div input::placeholder {
+    color: #fff;
+}
+
+/* VAREHUS */
+
+#search-vare {
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 2px solid #999999;
+    width: 65%;
+}
+
+/* VAREHUS KONTAKT */
+
+#kontakt {
+    font-family: "roboto";
+    padding: 50px 20px;
+}
+#kontakt h1 {
+    padding-top: 30px;
+}
+
+/* KORT */
+
+#kort {
+    padding-top: 80px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.row {
+    height: 15px;
+    text-align: left;
+    flex-wrap: nowrap;
+}
+
+.row h4 {
+    margin-left: 10px;
+    display: inline-flex;
+    width: 5%;
+    font-family: "roboto";
+}
+.row section {
+    display: inline-flex;
+    margin: 0 5px;
+    height: 15px;
+    width: 25%;
+}
+.row section .a1,.a2,.a3,.a4,.a5,.a6,.a7,.a8,.a9,.a10,.a11,.a12,.b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8,.b9,.b10,.b11,.b12 {
+    width: 25%;
+    height: 15px;
+    border: 1px solid #000;
+    background-color: #999999;
+}
+#row1a,#row2a,#row3a,#row4a,#row5a,#row6a,#row7a,#row8a,#row9a,#row10a,#row11a,#row12a,#row13a,#row14a,#row15a,#row16a,#row17a {
+    padding-bottom: 10px;
+}
+#row1b,#row2b,#row3b,#row4b,#row5b,#row6b,#row7b,#row8b,#row9b,#row10b,#row11b,#row12b,#row13b,#row14b,#row15b,#row16b,#row17b {
+    padding-top: 10px;
+}
+
+/* HEADER */
+
+header {
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .7);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-family: 'roboto';
+    color: #313131;
+}
+
+header li a:hover,
+header .menu-btn:hover {
+    background-color: #DF0023;
+    color: #fff;
+}
+/* MENU */
+
+header .menu {
+    clear: both;
+    max-height: 0px;
+    transition: max-height .2s ease-out;
+    margin: 0 -1px 0 -1px;
+}
+
+
+/* MENU ICON */
+
+header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+header .menu-icon .navicon {
+    background: #313131;
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 22px;
+}
+
+header .menu-icon .navicon:before,
+header .menu-icon .navicon:after {
+    background: #313131;
+    content: '';
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+header .menu-icon .navicon:before {
+    top: 6px;
+}
+
+header .menu-icon .navicon:after {
+    top: -6px;
+}
+
+
+/* MENU BUTTON */
+
+header .menu-btn {
+    display: none;
+}
+
+header .menu-btn:checked~.menu {
+    max-height: 250px;
+}
+
+header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+
+
+
+/* PC OG TABLET */
+@media screen and (min-width: 769px) {
+
+   
+/* PC VERSION */
+@media screen and (min-width: 1025px) and (max-width: 1680px) {
+
+}
+
+/* STORE SKÆRME */
+@media screen and (min-width: 1681px) {
+
+}
+    
+/* TABLET VERSION */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+    
+/* MOBIL VERSION */
+@media screen and (max-width: 768px) {
+    
+} 
